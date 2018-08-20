@@ -1,0 +1,22 @@
+---
+parent: "api_v1_sites_uuid_broadcasts"
+name: "ApiV1SitesUuidBroadcastsPostAuthInvalid"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/sites/{{@Random}}/broadcasts"
+method: "POST"
+auth: "INVALID_AUTH"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "UnSecured"
+severity: "Critical"
+inactive: false
+policies: null

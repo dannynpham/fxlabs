@@ -1,0 +1,22 @@
+---
+parent: "api_v1_devices_serial_number_patient"
+name: "ApiV1DevicesSerialNumberPatientGetAnonymousInvalid"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/devices/{{@Random}}/patient"
+method: "GET"
+auth: "Anonymous"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "UnSecured"
+severity: "Critical"
+inactive: false
+policies: null
