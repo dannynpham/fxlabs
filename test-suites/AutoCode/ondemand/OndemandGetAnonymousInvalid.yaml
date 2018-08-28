@@ -1,0 +1,24 @@
+---
+parent: "ondemand"
+name: "OndemandGetAnonymousInvalid"
+description: null
+type: "SUITE"
+endpoint: "/ondemand/"
+method: "GET"
+auth: "Anonymous"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+init: []
+cleanup: []
+category: "UnSecured"
+severity: "Critical"
+inactive: false
+policies: null
