@@ -1,0 +1,24 @@
+---
+parent: "api_v1_prescriptions"
+name: "ApiV1PrescriptionsPostOtherRbac"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/prescriptions/"
+method: "POST"
+auth: "Other"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode == 403"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+init: []
+cleanup: []
+category: "RBAC"
+severity: "Critical"
+inactive: false
+policies: null
