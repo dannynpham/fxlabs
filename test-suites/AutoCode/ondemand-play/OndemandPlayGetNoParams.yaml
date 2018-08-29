@@ -1,0 +1,24 @@
+---
+parent: "ondemand-play"
+name: "OndemandPlayGetNoParams"
+description: null
+type: "SUITE"
+endpoint: "/ondemand-play/"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode == 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+init: []
+cleanup: []
+category: "SimpleGET"
+severity: "Major"
+inactive: false
+policies: null

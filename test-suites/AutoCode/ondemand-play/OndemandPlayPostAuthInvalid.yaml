@@ -1,0 +1,24 @@
+---
+parent: "ondemand-play"
+name: "OndemandPlayPostAuthInvalid"
+description: null
+type: "SUITE"
+endpoint: "/ondemand-play/"
+method: "POST"
+auth: "INVALID_AUTH"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+init: []
+cleanup: []
+category: "UnSecured"
+severity: "Critical"
+inactive: false
+policies: null
